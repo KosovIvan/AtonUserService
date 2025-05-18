@@ -21,9 +21,9 @@ namespace AtonUserService.Data
             base.OnModelCreating(builder);
 
             Users admin = new Users() { 
-                Login = "Admin1",
+                Login = "Admin",
                 Password = "admin1234",
-                Name = "Иван", 
+                Name = "Admin", 
                 Gender = 1,
                 Birthday = new DateTime(2003, 11, 6),
                 Admin = true,
