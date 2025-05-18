@@ -4,6 +4,6 @@ namespace AtonUserService.Interfaces
 {
     public interface ITokenService
     {
-        Task<string> CreateToken(Users user);
+        string CreateToken(Users user);
     }
 }

@@ -1,10 +1,15 @@
 using AtonUserService.Data;
+using AtonUserService.Interfaces;
 using AtonUserService.Models;
+using AtonUserService.Repository;
+using AtonUserService.Service;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using TechProcessSupportSys.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -68,6 +73,10 @@ builder.Services.AddAuthentication(options =>
         IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(builder.Configuration["JWT:SigningKey"]))
     };
 });
+
+builder.Services.AddSingleton<IAutomapper, CustomAutomapper>();
+builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<IUsersRepository, UsersRepository>();
 
 var app = builder.Build();
 

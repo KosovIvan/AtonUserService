@@ -18,14 +18,14 @@ namespace AtonUserService.Service
             this.config = config;
             key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["JWT:SigningKey"]));
         }
-        public Task<string> CreateToken(Users user)
+        public string CreateToken(Users user)
         {
             var claims = new List<Claim>() {
-                new Claim(JwtRegisteredClaimNames.GivenName, user.UserName),
-                new Claim(JwtRegisteredClaimNames.Email, user.Email)
+                new Claim(JwtRegisteredClaimNames.GivenName, user.Login),
+                new Claim(JwtRegisteredClaimNames.Name, user.Name),
+                new Claim(JwtRegisteredClaimNames.Birthdate, user.Birthday.ToString()),
+                new Claim(ClaimsIdentity.DefaultRoleClaimType, user.Admin ? "Admin" : "User")
             };
-
-            foreach (var role in userRoles) claims.Add(new Claim(ClaimTypes.Role, role));
 
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
 
@@ -44,6 +44,5 @@ namespace AtonUserService.Service
 
             return tokenHandler.WriteToken(token);
         }
-    }
     }
 }

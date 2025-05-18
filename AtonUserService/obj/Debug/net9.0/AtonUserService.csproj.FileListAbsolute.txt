@@ -177,3 +177,4 @@ C:\Атон\Тестовое задание\AtonUserService\AtonUserService\obj\
 C:\Атон\Тестовое задание\AtonUserService\AtonUserService\obj\Debug\net9.0\AtonUserService.genruntimeconfig.cache
 C:\Атон\Тестовое задание\AtonUserService\AtonUserService\obj\Debug\net9.0\ref\AtonUserService.dll
 C:\Атон\Тестовое задание\AtonUserService\AtonUserService\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Атон\Тестовое задание\AtonUserService\AtonUserService\obj\Debug\net9.0\AtonUserService.sourcelink.json

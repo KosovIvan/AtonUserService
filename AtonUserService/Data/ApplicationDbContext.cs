@@ -14,6 +14,8 @@ namespace AtonUserService.Data
             Database.EnsureCreated();
         }
 
+        public DbSet<Users> Users { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
