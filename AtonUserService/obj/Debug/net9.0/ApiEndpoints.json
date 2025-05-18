@@ -30,5 +30,68 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AtonUserService.Controllers.UsersController",
+    "Method": "UpdateData",
+    "RelativePath": "api/Users/update-data{login}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateUserDto",
+        "Type": "AtonUserService.Dtos.Users.UpdateDataUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AtonUserService.Controllers.UsersController",
+    "Method": "UpdateLogin",
+    "RelativePath": "api/Users/update-login{login}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "new_login",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AtonUserService.Controllers.UsersController",
+    "Method": "UpdatePassword",
+    "RelativePath": "api/Users/update-password{login}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
