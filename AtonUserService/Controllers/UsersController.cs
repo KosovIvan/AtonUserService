@@ -33,11 +33,12 @@ namespace AtonUserService.Controllers
             {
                 return BadRequest(ModelState);
             }
+            if (await usersRepository.IsRevoked(loginDto.Login)) return NotFound();
 
             var user = await usersRepository.Login(loginDto);
             if (user == null) return Unauthorized("Некорретный логин и/или пароль");
 
-            var loggedUser = automapper.Map<UsersDto, Users>(user);
+            var loggedUser = automapper.Map<LoggedUserDto, Users>(user);
             loggedUser.Token = tokenService.CreateToken(user);
             return Ok(loggedUser);
         }
@@ -53,6 +54,7 @@ namespace AtonUserService.Controllers
             if (!(await usersRepository.CheckLogin(createUserDto.Login))) return BadRequest("Пользователь с данным логином уже существует");
             
             var user = automapper.Map<Users, CreateUserDto>(createUserDto);
+
             var creatorLogin = User.FindFirstValue(ClaimTypes.GivenName);
             user.CreatedBy = creatorLogin;
             user.ModifiedBy = creatorLogin;
@@ -71,38 +73,29 @@ namespace AtonUserService.Controllers
             {
                 return BadRequest(ModelState);
             }
-            if (await usersRepository.IsRevoked(login)) return Forbid();
-            
-            var updatedUser = await usersRepository.UpdateData(login, updateUserDto);
+            if (await usersRepository.IsRevoked(login)) return NotFound();
+
+            var modifierLogin = User.FindFirstValue(ClaimTypes.GivenName);
+            var updatedUser = await usersRepository.UpdateData(login, updateUserDto, modifierLogin);
 
             if (updatedUser == null) return NotFound();
 
-            var modifierLogin = User.FindFirstValue(ClaimTypes.GivenName);
-            updatedUser.ModifiedOn = DateTime.Now;
-            updatedUser.ModifiedBy = modifierLogin;
-
-            return Ok(automapper.Map<UpdatedUserDto, Users>(updatedUser));
+            return Ok(automapper.Map<UsersDto, Users>(updatedUser));
         }
 
         [HttpPut("update-password{login}")]
         [Authorize]
         public async Task<IActionResult> UpdatePassword([FromRoute] string login, [FromBody] string password)
         {
-            Console.WriteLine(login);
-            Console.WriteLine(ClaimTypes.GivenName);
             if ((User.FindFirstValue(ClaimTypes.GivenName) != login) && (User.FindFirstValue(ClaimsIdentity.DefaultRoleClaimType) != "Admin")) return Forbid();
-            if (await usersRepository.IsRevoked(login)) return Forbid();
+            if (await usersRepository.IsRevoked(login)) return NotFound();
 
-            var updatedUser = await usersRepository.UpdatePassword(login, password);
-            Console.WriteLine(login);
-            Console.WriteLine(ClaimTypes.GivenName);
+            var modifierLogin = User.FindFirstValue(ClaimTypes.GivenName);
+            var updatedUser = await usersRepository.UpdatePassword(login, password, modifierLogin);
 
             if (updatedUser == null) return NotFound();
 
-            var modifierLogin = User.FindFirstValue(ClaimTypes.GivenName);
-            updatedUser.ModifiedOn = DateTime.Now;
-            updatedUser.ModifiedBy = modifierLogin;
-            return Ok(automapper.Map<UpdatedUserDto, Users>(updatedUser));
+            return Ok(automapper.Map<UsersDto, Users>(updatedUser));
         }
 
         [HttpPut("update-login{login}")]
@@ -110,18 +103,52 @@ namespace AtonUserService.Controllers
         public async Task<IActionResult> UpdateLogin([FromRoute] string login, [FromBody] string new_login)
         {
             if ((User.FindFirstValue(ClaimTypes.GivenName) != login) && (User.FindFirstValue(ClaimsIdentity.DefaultRoleClaimType) != "Admin")) return Forbid();
-            if (await usersRepository.IsRevoked(login)) return Forbid();
+            if (await usersRepository.IsRevoked(login)) return NotFound();
             if (!(await usersRepository.CheckLogin(new_login))) return BadRequest("Пользователь с данным логином уже существует");
 
-            var updatedUser = await usersRepository.UpdateLogin(login, new_login);
+            var modifierLogin = User.FindFirstValue(ClaimTypes.GivenName);
+            var updatedUser = await usersRepository.UpdateLogin(login, new_login, modifierLogin);
 
             if (updatedUser == null) return NotFound();
 
-            var modifierLogin = User.FindFirstValue(ClaimTypes.GivenName);
-            updatedUser.ModifiedOn = DateTime.Now;
-            updatedUser.ModifiedBy = modifierLogin;
+            return Ok(automapper.Map<UsersDto, Users>(updatedUser));
+        }
 
-            return Ok(automapper.Map<UpdatedUserDto, Users>(updatedUser));
+        [HttpGet("active-users")]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> GetActiveUsers()
+        {
+            var users = await usersRepository.GetActiveUsers();
+
+            var usersDto = users.Select(u => automapper.Map<ActiveUsersDto, Users>(u)).ToList();
+            
+            return Ok(usersDto);
+        }
+
+        [HttpGet("{login}")]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> GetUserByLogin([FromRoute] string login)
+        {
+            var user = await usersRepository.GetUserByLogin(login);
+
+            if (user == null) return NotFound();
+
+            var userDto = automapper.Map<InfoUserDto, Users>(user);
+            userDto.IsActive = user.RevokedOn == null;
+            return Ok(userDto);
+        }
+
+        [HttpGet("aged-users{age:int}")]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> GetUsersAboveAge([FromRoute] int age)
+        {
+            if ((age < 0) || (age > 120)) return BadRequest("Возраст должен быть от 1 до 120");
+
+            var users = await usersRepository.GetUsersAboveAge(age);
+
+            var usersDto = users.Select(u => automapper.Map<UsersDto, Users>(u)).ToList();
+
+            return Ok(usersDto);
         }
     }
 }

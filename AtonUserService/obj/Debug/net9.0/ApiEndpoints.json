@@ -1,6 +1,48 @@
 [
   {
     "ContainingType": "AtonUserService.Controllers.UsersController",
+    "Method": "GetUserByLogin",
+    "RelativePath": "api/Users/{login}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AtonUserService.Controllers.UsersController",
+    "Method": "GetActiveUsers",
+    "RelativePath": "api/Users/active-users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AtonUserService.Controllers.UsersController",
+    "Method": "GetUsersAboveAge",
+    "RelativePath": "api/Users/aged-users{age}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "age",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AtonUserService.Controllers.UsersController",
     "Method": "CreateUser",
     "RelativePath": "api/Users/create-user",
     "HttpMethod": "POST",

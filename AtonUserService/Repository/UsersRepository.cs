@@ -27,6 +27,22 @@ namespace AtonUserService.Repository
             await context.SaveChangesAsync();
         }
 
+        public async Task<IEnumerable<Users>> GetActiveUsers()
+        {
+            return await context.Users.Where(u => u.RevokedOn == null).OrderBy(u => u.CreatedOn).ToListAsync();
+        }
+
+        public async Task<Users?> GetUserByLogin(string login)
+        {
+            return await context.Users.FirstOrDefaultAsync(u => u.Login == login);
+        }
+
+        public async Task<IEnumerable<Users>> GetUsersAboveAge(int age)
+        {
+            var dateTime = DateTime.Now.AddYears(-age);
+            return await context.Users.Where(u => u.Birthday != null).Where(u => u.Birthday <= dateTime).ToListAsync();
+        }
+
         public async Task<bool> IsRevoked(string login)
         {
             var existingUser = await context.Users.FirstOrDefaultAsync(u => u.Login == login);
@@ -39,7 +55,7 @@ namespace AtonUserService.Repository
             return await context.Users.FirstOrDefaultAsync(u => u.Login == loginDto.Login && u.Password == loginDto.Password);
         }
 
-        public async Task<Users?> UpdateData(string login, UpdateDataUserDto user)
+        public async Task<Users?> UpdateData(string login, UpdateDataUserDto user, string? modifierLogin)
         {
             var existingUser = await context.Users.FirstOrDefaultAsync(u => u.Login == login);
 
@@ -48,30 +64,39 @@ namespace AtonUserService.Repository
             if (user.Name != null) existingUser.Name = user.Name;
             if (user.Gender != null) existingUser.Gender = user.Gender.Value;
             if (user.Birthday != null) existingUser.Birthday = user.Birthday;
+            existingUser.ModifiedOn = DateTime.Now;
+            existingUser.ModifiedBy = modifierLogin;
+
             await context.SaveChangesAsync();
 
             return existingUser;
         }
 
-        public async Task<Users?> UpdateLogin(string login, string new_login)
+        public async Task<Users?> UpdateLogin(string login, string new_login, string? modifierLogin)
         {
             var existingUser = await context.Users.FirstOrDefaultAsync(u => u.Login == login);
 
             if (existingUser == null) return null;
 
             existingUser.Login = new_login;
+            existingUser.ModifiedOn = DateTime.Now;
+            existingUser.ModifiedBy = modifierLogin;
+
             await context.SaveChangesAsync();
 
             return existingUser;
         }
 
-        public async Task<Users?> UpdatePassword(string login, string password)
+        public async Task<Users?> UpdatePassword(string login, string password, string? modifierLogin)
         {
             var existingUser = await context.Users.FirstOrDefaultAsync(u => u.Login == login);
 
             if (existingUser == null) return null;
 
             existingUser.Password = password;
+            existingUser.ModifiedOn = DateTime.Now;
+            existingUser.ModifiedBy = modifierLogin;
+
             await context.SaveChangesAsync();
 
             return existingUser;
