@@ -37,7 +37,9 @@ namespace AtonUserService.Controllers
             var user = await usersRepository.Login(loginDto);
             if (user == null) return Unauthorized("Некорретный логин и/или пароль");
 
-            return Ok(automapper.Map<UsersDto, Users>(user));
+            var loggedUser = automapper.Map<UsersDto, Users>(user);
+            loggedUser.Token = tokenService.CreateToken(user);
+            return Ok(loggedUser);
         }
 
         [HttpPost("create-user")]

@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|c:\\\u0430\u0442\u043E\u043D\\\u0442\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\atonuserservice\\atonuserservice\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|solutionrelative:atonuserservice\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|c:\\\u0430\u0442\u043E\u043D\\\u0442\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\atonuserservice\\atonuserservice\\service\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|solutionrelative:atonuserservice\\service\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|c:\\\u0430\u0442\u043E\u043D\\\u0442\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\atonuserservice\\atonuserservice\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|solutionrelative:atonuserservice\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|c:\\\u0430\u0442\u043E\u043D\\\u0442\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\atonuserservice\\atonuserservice\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|solutionrelative:atonuserservice\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|c:\\\u0430\u0442\u043E\u043D\\\u0442\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\atonuserservice\\atonuserservice\\interfaces\\iusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|solutionrelative:atonuserservice\\interfaces\\iusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|c:\\\u0430\u0442\u043E\u043D\\\u0442\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\atonuserservice\\atonuserservice\\dtos\\users\\updatedatauserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|solutionrelative:atonuserservice\\dtos\\users\\updatedatauserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|c:\\\u0430\u0442\u043E\u043D\\\u0442\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\atonuserservice\\atonuserservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,24 +35,12 @@
       "RelativeMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|solutionrelative:atonuserservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|c:\\\u0430\u0442\u043E\u043D\\\u0442\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\atonuserservice\\atonuserservice\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|solutionrelative:atonuserservice\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|c:\\\u0430\u0442\u043E\u043D\\\u0442\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\atonuserservice\\atonuserservice\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|solutionrelative:atonuserservice\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|c:\\\u0430\u0442\u043E\u043D\\\u0442\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\atonuserservice\\atonuserservice\\dtos\\users\\updateduserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|solutionrelative:atonuserservice\\dtos\\users\\updateduserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|c:\\\u0430\u0442\u043E\u043D\\\u0442\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\atonuserservice\\atonuserservice\\dtos\\users\\usersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|solutionrelative:atonuserservice\\dtos\\users\\usersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|c:\\\u0430\u0442\u043E\u043D\\\u0442\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\atonuserservice\\atonuserservice\\dtos\\users\\updatedatauserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|solutionrelative:atonuserservice\\dtos\\users\\updatedatauserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|c:\\\u0430\u0442\u043E\u043D\\\u0442\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\atonuserservice\\atonuserservice\\dtos\\users\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,14 +63,6 @@
       "RelativeMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|solutionrelative:atonuserservice\\service\\customautomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|c:\\\u0430\u0442\u043E\u043D\\\u0442\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\atonuserservice\\atonuserservice\\interfaces\\iusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|solutionrelative:atonuserservice\\interfaces\\iusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|c:\\\u0430\u0442\u043E\u043D\\\u0442\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\atonuserservice\\atonuserservice\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|solutionrelative:atonuserservice\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|c:\\\u0430\u0442\u043E\u043D\\\u0442\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\atonuserservice\\atonuserservice\\atonuserservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{12440309-B278-49CA-8A5A-4E2A634BB2D9}|AtonUserService\\AtonUserService.csproj|solutionrelative:atonuserservice\\atonuserservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
@@ -74,37 +74,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UpdatedUserDto.cs",
-              "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Dtos\\Users\\UpdatedUserDto.cs",
-              "RelativeDocumentMoniker": "AtonUserService\\Dtos\\Users\\UpdatedUserDto.cs",
-              "ToolTip": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Dtos\\Users\\UpdatedUserDto.cs",
-              "RelativeToolTip": "AtonUserService\\Dtos\\Users\\UpdatedUserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T20:23:00.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "AtonUserService\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "AtonUserService\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAqwFUAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T14:44:44.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "IUsersRepository.cs",
               "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Interfaces\\IUsersRepository.cs",
               "RelativeDocumentMoniker": "AtonUserService\\Interfaces\\IUsersRepository.cs",
@@ -112,11 +86,76 @@
               "RelativeToolTip": "AtonUserService\\Interfaces\\IUsersRepository.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T16:50:57.349Z"
+              "WhenOpened": "2025-05-18T16:50:57.349Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Program.cs",
+              "RelativeDocumentMoniker": "AtonUserService\\Program.cs",
+              "ToolTip": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Program.cs",
+              "RelativeToolTip": "AtonUserService\\Program.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAADoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T14:37:37.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Service\\TokenService.cs",
+              "RelativeDocumentMoniker": "AtonUserService\\Service\\TokenService.cs",
+              "ToolTip": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Service\\TokenService.cs",
+              "RelativeToolTip": "AtonUserService\\Service\\TokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T16:18:37.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UpdateDataUserDto.cs",
+              "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Dtos\\Users\\UpdateDataUserDto.cs",
+              "RelativeDocumentMoniker": "AtonUserService\\Dtos\\Users\\UpdateDataUserDto.cs",
+              "ToolTip": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Dtos\\Users\\UpdateDataUserDto.cs",
+              "RelativeToolTip": "AtonUserService\\Dtos\\Users\\UpdateDataUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:12:25.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Interfaces\\ITokenService.cs",
+              "RelativeDocumentMoniker": "AtonUserService\\Interfaces\\ITokenService.cs",
+              "ToolTip": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Interfaces\\ITokenService.cs",
+              "RelativeToolTip": "AtonUserService\\Interfaces\\ITokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T16:19:14.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "AtonUserService\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "AtonUserService\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAUwCkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T14:44:44.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "AtonUserService\\Data\\ApplicationDbContext.cs",
@@ -129,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\appsettings.json",
               "RelativeDocumentMoniker": "AtonUserService\\appsettings.json",
@@ -137,50 +176,23 @@
               "RelativeToolTip": "AtonUserService\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-18T15:33:54.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T15:33:54.776Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Program.cs",
-              "RelativeDocumentMoniker": "AtonUserService\\Program.cs",
-              "ToolTip": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Program.cs",
-              "RelativeToolTip": "AtonUserService\\Program.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAADoAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "UpdatedUserDto.cs",
+              "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Dtos\\Users\\UpdatedUserDto.cs",
+              "RelativeDocumentMoniker": "AtonUserService\\Dtos\\Users\\UpdatedUserDto.cs",
+              "ToolTip": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Dtos\\Users\\UpdatedUserDto.cs",
+              "RelativeToolTip": "AtonUserService\\Dtos\\Users\\UpdatedUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T14:37:37.076Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T20:23:00.406Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Service\\TokenService.cs",
-              "RelativeDocumentMoniker": "AtonUserService\\Service\\TokenService.cs",
-              "ToolTip": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Service\\TokenService.cs",
-              "RelativeToolTip": "AtonUserService\\Service\\TokenService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBoAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T16:18:37.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UpdateDataUserDto.cs",
-              "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Dtos\\Users\\UpdateDataUserDto.cs",
-              "RelativeDocumentMoniker": "AtonUserService\\Dtos\\Users\\UpdateDataUserDto.cs",
-              "ToolTip": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Dtos\\Users\\UpdateDataUserDto.cs",
-              "RelativeToolTip": "AtonUserService\\Dtos\\Users\\UpdateDataUserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T19:12:25.886Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "CustomAutomapper.cs",
               "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Service\\CustomAutomapper.cs",
               "RelativeDocumentMoniker": "AtonUserService\\Service\\CustomAutomapper.cs",
@@ -192,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "UsersDto.cs",
               "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Dtos\\Users\\UsersDto.cs",
               "RelativeDocumentMoniker": "AtonUserService\\Dtos\\Users\\UsersDto.cs",
@@ -204,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "CreateUserDto.cs",
               "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Dtos\\Users\\CreateUserDto.cs",
               "RelativeDocumentMoniker": "AtonUserService\\Dtos\\Users\\CreateUserDto.cs",
@@ -216,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Dtos\\Users\\LoginDto.cs",
               "RelativeDocumentMoniker": "AtonUserService\\Dtos\\Users\\LoginDto.cs",
@@ -228,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Models\\Users.cs",
               "RelativeDocumentMoniker": "AtonUserService\\Models\\Users.cs",
@@ -240,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "UsersRepository.cs",
               "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Repository\\UsersRepository.cs",
               "RelativeDocumentMoniker": "AtonUserService\\Repository\\UsersRepository.cs",
@@ -249,18 +261,6 @@
               "ViewState": "AgIAADAAAAAAAAAAAAAAwDsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-18T16:51:16.42Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ITokenService.cs",
-              "DocumentMoniker": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Interfaces\\ITokenService.cs",
-              "RelativeDocumentMoniker": "AtonUserService\\Interfaces\\ITokenService.cs",
-              "ToolTip": "C:\\\u0410\u0442\u043E\u043D\\\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435\\AtonUserService\\AtonUserService\\Interfaces\\ITokenService.cs",
-              "RelativeToolTip": "AtonUserService\\Interfaces\\ITokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T16:19:14.902Z"
             },
             {
               "$type": "Document",
