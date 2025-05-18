@@ -1,0 +1,6 @@
+@AtonUserService_HostAddress = http://localhost:5164
+
+GET {{AtonUserService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
