@@ -27,6 +27,22 @@ namespace AtonUserService.Repository
             await context.SaveChangesAsync();
         }
 
+        public async Task<Users?> DeleteUserByLogin(string login, string? deleterLogin)
+        {
+            var deleted = await context.Users.FirstOrDefaultAsync(u => u.Login == login);
+
+            if (deleted == null) return null;
+
+            deleted.ModifiedOn = DateTime.Now;
+            deleted.ModifiedBy = deleterLogin;
+            deleted.RevokedOn = DateTime.Now;
+            deleted.RevokedBy = deleterLogin;
+
+            await context.SaveChangesAsync();
+
+            return deleted;
+        }
+
         public async Task<IEnumerable<Users>> GetActiveUsers()
         {
             return await context.Users.Where(u => u.RevokedOn == null).OrderBy(u => u.CreatedOn).ToListAsync();
@@ -100,6 +116,22 @@ namespace AtonUserService.Repository
             await context.SaveChangesAsync();
 
             return existingUser;
+        }
+
+        public async Task<Users?> UpdateRecover(string login, string modifierLogin)
+        {
+            var recoveredUser = await context.Users.FirstOrDefaultAsync(u => u.Login == login);
+
+            if (recoveredUser == null) return null;
+
+            recoveredUser.ModifiedOn = DateTime.Now;
+            recoveredUser.ModifiedBy = modifierLogin;
+            recoveredUser.RevokedOn = null;
+            recoveredUser.RevokedBy = "";
+
+            await context.SaveChangesAsync();
+
+            return recoveredUser;
         }
     }
 }

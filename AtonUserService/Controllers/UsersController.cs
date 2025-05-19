@@ -64,7 +64,7 @@ namespace AtonUserService.Controllers
             return Ok();
         }
 
-        [HttpPut("update-data{login}")]
+        [HttpPut("update-data/{login}")]
         [Authorize]
         public async Task<IActionResult> UpdateData([FromRoute] string login, [FromBody] UpdateDataUserDto updateUserDto)
         {
@@ -83,7 +83,7 @@ namespace AtonUserService.Controllers
             return Ok(automapper.Map<UsersDto, Users>(updatedUser));
         }
 
-        [HttpPut("update-password{login}")]
+        [HttpPut("update-password/{login}")]
         [Authorize]
         public async Task<IActionResult> UpdatePassword([FromRoute] string login, [FromBody] string password)
         {
@@ -98,7 +98,7 @@ namespace AtonUserService.Controllers
             return Ok(automapper.Map<UsersDto, Users>(updatedUser));
         }
 
-        [HttpPut("update-login{login}")]
+        [HttpPut("update-login/{login}")]
         [Authorize]
         public async Task<IActionResult> UpdateLogin([FromRoute] string login, [FromBody] string new_login)
         {
@@ -110,6 +110,13 @@ namespace AtonUserService.Controllers
             var updatedUser = await usersRepository.UpdateLogin(login, new_login, modifierLogin);
 
             if (updatedUser == null) return NotFound();
+
+            if (User.FindFirstValue(ClaimTypes.GivenName) == login)
+            {
+                var userDto = automapper.Map<UserTokenDto, Users>(updatedUser);
+                userDto.Token = tokenService.CreateToken(updatedUser);
+                return Ok(userDto);
+            }
 
             return Ok(automapper.Map<UsersDto, Users>(updatedUser));
         }
@@ -138,7 +145,7 @@ namespace AtonUserService.Controllers
             return Ok(userDto);
         }
 
-        [HttpGet("aged-users{age:int}")]
+        [HttpGet("aged-users/{age:int}")]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetUsersAboveAge([FromRoute] int age)
         {
@@ -149,6 +156,32 @@ namespace AtonUserService.Controllers
             var usersDto = users.Select(u => automapper.Map<UsersDto, Users>(u)).ToList();
 
             return Ok(usersDto);
+        }
+
+        [HttpDelete("{login}")]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> DeleteUserByLogin([FromRoute] string login)
+        {
+            var deleterLogin = User.FindFirstValue(ClaimTypes.GivenName);
+            var deleted = await usersRepository.DeleteUserByLogin(login, deleterLogin);
+
+            if (deleted == null) return NotFound();
+
+            return Ok();
+        }
+
+        [HttpPut("recover-user/{login}")]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> UpdateRecover([FromRoute] string login)
+        {
+            var modifierLogin = User.FindFirstValue(ClaimTypes.GivenName);
+            var recoveredUser = await usersRepository.UpdateRecover(login, modifierLogin);
+
+            if (recoveredUser == null) return NotFound();
+
+            var userDto = automapper.Map<InfoUserDto, Users>(recoveredUser);
+            userDto.IsActive = recoveredUser.RevokedOn == null;
+            return Ok(userDto);
         }
     }
 }

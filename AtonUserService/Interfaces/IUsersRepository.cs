@@ -16,5 +16,7 @@ namespace AtonUserService.Interfaces
         Task<IEnumerable<Users>> GetActiveUsers();
         Task<Users?> GetUserByLogin(string login);
         Task<IEnumerable<Users>> GetUsersAboveAge(int age);
+        Task<Users?> DeleteUserByLogin(string login, string deleterLogin);
+        Task<Users?> UpdateRecover(string login, string modifierLogin);
     }
 }

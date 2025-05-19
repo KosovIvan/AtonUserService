@@ -77,7 +77,7 @@
         }
       }
     },
-    "/api/Users/update-data{login}": {
+    "/api/Users/update-data/{login}": {
       "put": {
         "tags": [
           "Users"
@@ -123,7 +123,7 @@
         }
       }
     },
-    "/api/Users/update-password{login}": {
+    "/api/Users/update-password/{login}": {
       "put": {
         "tags": [
           "Users"
@@ -169,7 +169,7 @@
         }
       }
     },
-    "/api/Users/update-login{login}": {
+    "/api/Users/update-login/{login}": {
       "put": {
         "tags": [
           "Users"
@@ -247,9 +247,29 @@
             "description": "OK"
           }
         }
+      },
+      "delete": {
+        "tags": [
+          "Users"
+        ],
+        "parameters": [
+          {
+            "name": "login",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
-    "/api/Users/aged-users{age}": {
+    "/api/Users/aged-users/{age}": {
       "get": {
         "tags": [
           "Users"
@@ -262,6 +282,28 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Users/recover-user/{login}": {
+      "put": {
+        "tags": [
+          "Users"
+        ],
+        "parameters": [
+          {
+            "name": "login",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],

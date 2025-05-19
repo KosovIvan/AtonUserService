@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AtonUserService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38cd82dfe7a5fe36008102545e6953fa15914ab3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34331caf804614259a05dfa725c4557fad118311")]
 [assembly: System.Reflection.AssemblyProductAttribute("AtonUserService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AtonUserService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
